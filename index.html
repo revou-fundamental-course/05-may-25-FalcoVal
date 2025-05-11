@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JalanIn</title>
+
+    <!-- Icon Web -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Notyf CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    
+</head>
+<body>
+    <header class="header-top">
+        <nav>
+            <div class="brand">
+                <img src="images/logo.png" alt="" width="25px">
+                <div>Jalan<span class="brand-active">In</span></div>
+            </div>
+
+            <button id="bars" class="bars">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul id="nav-list" class="nav-list">
+                <li><a href="#beranda" class="nav-item">Beranda</a></li>
+                <li><a href="#kenapa-kami" class="nav-item">Kenapa kami</a></li>
+                <li><a href="#paket-travel" class="nav-item">Paket Travel</a></li>
+                <li><a href="#testimoni" class="nav-item">Testimoni</a></li>
+                <li><a href="#kontak" class="nav-item">Kontak</a></li>
+                <li><a href="#call-to-action" class="nav-item nav-item-active">Call To Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="beranda">
+        <section class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <img src="images/travel1.jpg" alt="">
+                    <div class="slide-highlight">
+                        <h2>Bali</h2>
+                        <p>
+                            "Nikmati keindahan pantai, budaya lokal yang kaya, serta suasana tropis yang memikat di pulau Bali.""
+                        </p>
+                        <button>Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/travel2.jpg" alt="">
+                    <div class="slide-highlight">
+                        <h2>Jepang</h2>
+                        <p>
+                            Jelajahi perpaduan tradisi dan teknologi di Jepang, mulai dari kuil kuno hingga kota futuristik seperti Tokyo."
+                        </p>
+                        <button>Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/travel6.jpg" alt="">
+                    <div class="slide-highlight">
+                        <h2>Swiss</h2>
+                        <p>
+                            "Nikmati panorama pegunungan Alpen, danau jernih, serta keindahan kota-kota klasik di Swiss yang menawan."
+                        </p>
+                        <button>Pesan Sekarang</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-arrows">
+                <button id="prev">
+                    <i class="fa fa-angle-left"></i>
+                </button>
+                <button id="next">
+                    <i class="fa fa-angle-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="search-box">
+            <form id="search-box">
+                <input type="search" placeholder="Cari Paket Travel" id="input-search">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </section>
+
+        <section class="future" id="kenapa-kami">
+            <img src="images/logo.png" alt="">
+            <div class="future-information">
+                <h2 style="font-size: 1.5em;">Mengapa Memilih Layanan Travel Kami?</h2>
+                <p style="padding-top: 5px; font-weight: 600;">
+                    Liburan adalah momen berharga yang layak direncanakan dengan sempurna. 
+                    Kami memahami bahwa setiap perjalanan adalah kesempatan untuk menciptakan kenangan indah, 
+                    menjelajahi tempat baru, Berikut beberapa alasan mengapa ribuan pelanggan telah mempercayakan liburannya kepada kami:
+                </p>
+                <div class="container-package-feature">
+                    <div class="package-feature">
+                        <span>1</span>
+                        <p>Perjalanan yang nyaman dan aman, dirancang untuk memberikan pengalaman terbaik selama liburan Anda.</p>
+                    </div>
+                    <div class="package-feature">
+                        <span>2</span>
+                        <p>Paket wisata lengkap dan fleksibel, disesuaikan dengan kebutuhan serta anggaran Anda.</p>
+                    </div>
+                    <div class="package-feature">
+                        <span>3</span>
+                        <p>Layanan pelanggan responsif 24/7, siap membantu Anda kapan saja selama perjalanan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-package-section" id="paket-travel">
+            <h1>Paket Travel</h1>
+            <div class="package-list" id="package-list">
+
+            </div>
+        </section>
+
+        <section class="testimonial" id="testimoni">
+            <h2>Testimoni</h2>
+            <div class="testimonial-wrapper">  
+                <div class="testimonial-card">
+                    <img src="images/photo1.jpg" alt="Testimonial Photo 1">
+                    <span>Andi Pratama</span>
+                    <span>Travel Blogger, 25</span>
+                    <p>"Destinasi yang direkomendasikan benar-benar sesuai ekspektasi! Web ini sangat memudahkan perjalanan saya."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/photo2.jpg" alt="Testimonial Photo 2">
+                    <span>Rudi Hartono</span>
+                    <span>Photographer, 28</span>
+                    <p>"Saya dapat banyak spot foto luar biasa dari tips dan panduan perjalanan yang ada di sini."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/photo3.jpg" alt="Testimonial Photo 3">
+                    <span>Sinta Dewi</span>
+                    <span>Ibu Rumah Tangga, 35</span>
+                    <p>"Pertama kali liburan bersama keluarga ke luar pulau, semuanya diatur dengan sangat rapi. Sangat puas!"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="kontak">
+            <h2 style="font-size: 1.5em;">Kontak Kami</h2>
+            <p style="color: var(--pColor); font-size: 14px; padding: 10px 0 40px 0;">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <label for="">
+                        Nama lengkap : 
+                        <input type="text" placeholder="Nama Lengkap" id="full-name">
+                        <span class="error-message" id="error-message-full-name"></span>
+                    </label>
+                    <label for="">
+                        Email : 
+                        <input type="text" placeholder="Email" id="email">
+                        <span class="error-message" id="error-message-email"></span>
+                    </label>
+                    <label for="">
+                        Apa yang anda minati
+                        <div class="select-wrapper">
+                            <select id="interest">
+                                <option value="">Pilih Opsi</option>
+                                <option value="as">Nam</option>
+                                <option value="12">Nam</option>
+                                
+                            </select>
+                            <button type="button">
+                                <i class="fa fa-angle-down"></i>
+                            </button>
+                        </div>
+                        <span class="error-message" id="error-message-interest"></span>
+                    </label>
+                    <label for="">
+                        Pesan <sup style="color: var(--pColor);">(Opsional)</sup>
+                        <textarea id="message"></textarea>
+                        <span class="error-message" id="error-message-message"></span>
+                    </label>
+                    <button class="btn-form-submit" type="submit">Kirim</button>
+                </form>
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1746947689407!6m8!1m7!1s6-kT7B3_ESY3twIaDCWgWg!2m2!1d-6.194496409466946!2d106.8220457267364!3f183.30226333909545!4f-8.323932142229964!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="call-action-section" id="call-to-action">
+            <h1>Temukan Perjalanan Impianmu Sekarang</h1>
+            <p>Pilih dari berbagai destinasi eksotis dengan harga terbaik. Kami siap bantu wujudkan pengalaman perjalanan yang tak terlupakan.</p>
+            <a href="#paket-travel">Lihat Paket</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="brand footer-brand">
+                    <img src="images/logo.png" alt="" width="25px">
+                    <div>Jalan<span class="brand-active">In</span></div>
+                </div>
+                <p style="font-size: 12px; padding-top: 10px;">Pilih dari berbagai destinasi eksotis <br> dengan harga terbaik</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Menu Utama</h3>
+                <ul>
+                    <li><a href="">Beranda</a></li>
+                    <li><a href="">Paket Kami</a></li>
+                    <li><a href="">Call To Action</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">jalanin@gamil.com</a></li>
+                    <li><a href="#">+62 328 3276 3257</a></li>
+                    <li><a href="#">Jl. bersama satu darah, No 28.</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Sosial Media</h3>
+                <ul class="social-media">
+                    <li><a href="">
+                        <i class="fa fa-facebook"></i>
+                        Facebook
+                    </a></li>
+                    <li><a href="">
+                        <i class="fa fa-instagram"></i>
+                        Instagram
+                    </a></li>
+                    <li><a href="">
+                        <i class="fa fa-twitter"></i>
+                        Twitter
+                    </a></li>
+                    <li><a href="">
+                        <i class="fa fa-youtube"></i>
+                        Youtube
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; Copyright 2025 by Alfarozi</p>
+        </div>
+    </footer>
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/2f4686a27c.js" crossorigin="anonymous"></script>
+    
+    <!-- Notyf JS -->
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <!-- Eskternal CSS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
