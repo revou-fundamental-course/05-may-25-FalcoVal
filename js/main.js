@@ -62,16 +62,13 @@ const tamplateCard = (index, package, price, description, rating) => {
     const cardPackage =  `
         <div class="card-package">
             <div class="card-image">
-                // Gambar berdasarkan index 
                 <img src="images/travel${index + 1}.jpg" alt="" width="100%" />
 
-                // Rating bintang
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <span>${rating}</span>
                 </div>
 
-                // Tombol like
                 <div class="like">
                     <button id="btn-like">
                         <i class="fa fa-heart"></i>
@@ -80,20 +77,16 @@ const tamplateCard = (index, package, price, description, rating) => {
             </div>
 
             <div class="package-price">
-                // Nama paket 
                 <span style="font-weight: bold;">${package}</span>
 
-                // Konversi price ke mata uang IDR
                 <span>${price.toLocaleString('id-ID', {
                     style: "currency",
                     currency: "IDR"
                 })}</span>
             </div>
 
-            // Deskripsi singkat
             <p>${description}</p>
 
-            // Tombol aksi
             <button class="btn-card-book-now">Pesan Sekarang</button>
         </div>
     `
