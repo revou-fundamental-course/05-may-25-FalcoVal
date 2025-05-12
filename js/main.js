@@ -171,7 +171,7 @@ const searchPackage = () => {
 
     // Iterasi untuk menambahkan card paket
     filterPackage.map((packages, index) => {
-        consast { package, price, description, rating } = packages
+        const { package, price, description, rating } = packages
         
         // Panggil fungsi untuk membuat card
         tamplateCard(index, package, price, description, rating)
