@@ -21,11 +21,10 @@ JalanIn adalah aplikasi web perjalanan berbasis Single Page yang memungkinkan pe
    git clone https://github.com/username/jalanin-website.git
 
 2. Buka index.html di browser untuk melihat aplikasi:
-   
-  ```/images
-  ```/css
-     ```- styles.css
-   ```/js
-      ```- main.js
+   /images
+   /css
+      - styles.css
+   /js
+      - main.js
   ```index.html
 
