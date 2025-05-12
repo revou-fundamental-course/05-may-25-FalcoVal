@@ -203,3 +203,18 @@ contactForm.addEventListener('submit', (e) => {
         notyf.success('Data berhasil disimpan!');
     }
 })
+
+
+
+// =================================
+// TO UP
+// =================================
+window.addEventListener('scroll', () => {
+    const upTo = document.getElementById('to-up')
+
+    window.scrollY > 30 ? upTo.style.display = "flex" : upTo.style.display = "none"
+
+    upTo.addEventListener('click', () => {
+        window.scrollTo(0, 0)
+    })
+})
