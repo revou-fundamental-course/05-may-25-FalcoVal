@@ -211,7 +211,7 @@ const contactFormValidation = () => {
         document.getElementById(`error-message-${id}`).innerText = message
         const inputElementInId =  document.getElementById(`${id}`)
         inputElementInId.style.border = "1px solid red"
-        inputElementInId.style.boxShadow = "0 1px 5px 0px red"
+        inputElementInId.style.boxShadow = "0 1px 2px 0px red"
         
     }
 
