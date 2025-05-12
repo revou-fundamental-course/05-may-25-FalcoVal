@@ -26,6 +26,6 @@ JalanIn adalah aplikasi web perjalanan berbasis Single Page yang memungkinkan pe
      └── styles.css
    /js
      └── main.js
-   index.html
+   index.html```
 
 
