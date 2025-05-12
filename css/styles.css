@@ -588,6 +588,25 @@ main {
 }
 
 
+/* TO UP */
+.to-up {
+  position: fixed;
+  bottom: 40px;
+  right: 200px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainColor);
+  box-shadow: 0 1px 5px var(--mainColor);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: white;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
 
 /* FOOTER */
 .footer-container {
