@@ -208,7 +208,10 @@ const contactFormValidation = () => {
 
     // Tampilkan pesan error berdasarkan id dan message yang di kirim
     const messageError = (id, message) => {
-        document.getElementById(`error-message-${id}`).innerText = message
+        const messageElement = document.getElementById(`error-message-${id}`)
+
+        messageElement.innerText = message
+        messageElement.style.border = "2px solid red"
     }
 
     // Bersihkan pesan error
@@ -245,7 +248,7 @@ contactForm.addEventListener('submit', (e) => {
 
     // Jika contactFormValidation() true jalankan alert
     if(contactFormValidation())  {
-        notyf.success('Data berhasil disimpan!');
+        notyf.success('Data berhasil dikirim!');
     }
 })
 
