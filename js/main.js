@@ -208,10 +208,9 @@ const contactFormValidation = () => {
 
     // Tampilkan pesan error berdasarkan id dan message yang di kirim
     const messageError = (id, message) => {
-        const messageElement = document.getElementById(`error-message-${id}`)
-
-        messageElement.innerText = message
-        messageElement.style.border = "2px solid red"
+        document.getElementById(`error-message-${id}`).innerText = message
+        document.getElementById(`${id}`).style.border = "2px solid red"
+        
     }
 
     // Bersihkan pesan error
