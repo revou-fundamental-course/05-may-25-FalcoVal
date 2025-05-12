@@ -213,6 +213,12 @@ const contactFormValidation = () => {
         inputElementInId.style.border = "1px solid red"
         inputElementInId.style.boxShadow = "0 1px 2px 0px red"
         
+        if(!id) {
+        inputElementInId.style.border = "2px solid var(--mainColor)"
+            inputElementInId.style.boxShadow = "none"
+  
+        }
+
     }
 
     // Bersihkan pesan error
