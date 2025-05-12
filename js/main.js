@@ -210,13 +210,13 @@ const contactFormValidation = () => {
     const messageError = (id, message) => {
         document.getElementById(`error-message-${id}`).innerText = message
         const inputElementInId =  document.getElementById(`${id}`)
-        inputElementInId.style.border = "1px solid red"
-        inputElementInId.style.boxShadow = "0 1px 2px 0px red"
         
-        if(!id) {
-        inputElementInId.style.border = "2px solid var(--mainColor)"
+        if(!message) { // Jika tidak ada pesan error, kembalikan styling normal
+            inputElementInId.style.border = "2px solid var(--mainColor)"
             inputElementInId.style.boxShadow = "none"
-  
+        } else { // Jika ada pesan error, tampilkan border merah
+            inputElementInId.style.border = "1px solid red"
+            inputElementInId.style.boxShadow = "0 1px 2px 0px red"
         }
 
     }
